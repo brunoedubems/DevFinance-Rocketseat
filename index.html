@@ -11,7 +11,7 @@
 
 <body>
     <header>
-<img src="./assets/logo.svg" alt="Logo Dev Finance">
+        <img src="./assets/logo.svg" alt="Logo Dev Finance">
     </header>
     <main class="container">
         <section id="balance">
@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td class="description">Criação website</td>
-                        <td class="income">  - R$ 5.000,00</td>
+                        <td class="income"> - R$ 5.000,00</td>
                         <td class="date"> 23/01/2021</td>
                         <td>
                             <img src="./assets/minus.svg" alt="Remover Transações">
@@ -89,17 +89,38 @@
 
     </main>
 
-   <div class="modal-overlay active">
-       <div class="modal">
-<div id="form">
-    <h2>Nova Transação</h2>
-    <form action="">
-        
-    </form>
-</div>
-       </div>
-   </div>
-    
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div id="form">
+                <h2>Nova Transação</h2>
+                <form action="">
+                    <div class="input-group">
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00">
+                        <small>Use o sinal - (negativo) para despesas e,
+                            (virgula) para casas decimais
+                        </small>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button 
+                        cancel">Cancelar</a>
+                        <button>Salvar</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div>
             <p>dev.finance$</p>
